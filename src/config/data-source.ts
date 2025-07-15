@@ -8,11 +8,11 @@ dotenv.config();
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: process.env.DB_HOST,
-    port: parseInt(process.env.DB_PORT || "5432"),
-    username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    host: process.env.PGHOST,
+    port: parseInt(process.env.PGPORT || "5432"),
+    username: process.env.PGUSER,
+    password: process.env.PGPASSWORD,
+    database: process.env.PGDATABASE,
     //dropSchema: true, //si està en true inicializa las tablas de la base de datos
     synchronize: true, 
     logging: false, //si està en true muestra la consulta en consola
