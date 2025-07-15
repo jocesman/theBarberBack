@@ -4,7 +4,7 @@ import { AppDataSource } from "./config/data-source";
 import { preLoadData } from "./helpers/preLoaderData"
 import { log } from "console";
 
-const PORT = process.env.PORT || 3000; 
+const PORT = process.env.PORT || 5173; 
 
 AppDataSource.initialize()
     .then(res => {
