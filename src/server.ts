@@ -5,6 +5,8 @@ import cors from "cors";
 
 const server = express();
 
+server.use(express.json()); // Para parsear JSON
+
 // Ruta para el healthcheck
 server.get('/health', (req, res) => {
   res.status(200).send('OK');
